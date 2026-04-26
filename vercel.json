@@ -6,11 +6,11 @@
       "use": "@vercel/static"
     },
     {
-      "src": "**/*.svg",
+      "src": "favicon.svg",
       "use": "@vercel/static"
     },
     {
-      "src": "**/*.ico",
+      "src": "favicon.ico",
       "use": "@vercel/static"
     },
     {
