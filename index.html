@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amira Aldahab™ - Premium Gold Sales | amiraaldahab.online</title>
+    <meta name="description" content="Buy premium gold directly from Cairo and Dubai. Secure worldwide delivery. Accept Bitcoin, USDT, Ethereum. Trusted gold dealer with verified testimonials.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <style>
+        /* ===================================
+           DESIGN SYSTEM - PREMIUM FINANCIAL
+           =================================== */
+        :root {
+            --color-black: #0A0A0A;
+            --color-gray: #333333;
+            --color-light-gray: #666666;
+            --color-white: #FFFFFF;
+            --color-gold: #D4AF37;
+            --color-gold-light: #F0D264;
+            --color-border: #E5E5E5;
+            --color-background: #FAFAFA;
+            
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            --font-display: 'Georgia', 'Times New Roman', serif;
+            
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 24px;
+            --space-lg: 32px;
+            --space-xl: 48px;
+            --space-2xl: 64px;
+            --space-3xl: 96px;
+            
+            --border-radius: 4px;
+            --transition: 0.2s ease;
+            
+            --container: 1200px;
+        }
+        
+        /* ===================================
+           BASE STYLES
+           =================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--color-gray);
+            background-color: var(--color-white);
+        }
+        
+        /* ===================================
+           TYPOGRAPHY
+           =================================== */
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--color-black);
+        }
+        
+        h1 {
+            font-size: 3rem;
+            margin-bottom: var(--space-md);
+        }
+        
+        h2 {
+            font-size: 2.25rem;
+            margin-bottom: var(--space-lg);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-sm);
+            color: var(--color-gold);
+        }
+        
+        p {
+            margin-bottom: var(--space-md);
+            font-size: 1.125rem;
+            max-width: 65ch;
+        }
+        
+        a {
+            color: var(--color-gold);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--color-gold-light);
+        }
+        
+        /* ===================================
+           LAYOUT COMPONENTS
+           =================================== */
+        .container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+        
+        .section {
+            padding: var(--space-3xl) 0;
+        }
+        
+        .section-sm {
+            padding: var(--space-xl) 0;
+        }
+        
+        .grid {
+            display: grid;
+            gap: var(--space-lg);
+        }
+        
+        .grid-2 {
+            grid-template-columns: 1fr 1fr;
+        }
+        
+        .grid-3 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+        
+        .grid-4 {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        
+        /* ===================================
+           HEADER
+           =================================== */
+        header {
+            padding: var(--space-lg) 0;
+            border-bottom: 1px solid var(--color-border);
+            background-color: var(--color-white);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--color-black);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: var(--space-xl);
+        }
+        
+        nav a {
+            color: var(--color-gray);
+            font-weight: 500;
+        }
+        
+        /* ===================================
+           HERO SECTION - TRUST FIRST
+           =================================== */
+        .hero {
+            padding: var(--space-3xl) 0;
+        }
+        
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+            align-items: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .hero-content p {
+            font-size: 1.25rem;
+            margin-bottom: var(--space-xl);
+            color: var(--color-light-gray);
+        }
+        
+        .hero-cta {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-xl);
+        }
+        
+        .hero-image {
+            width: 100%;
+            height: auto;
+            border-radius: var(--border-radius);
+        }
+        
+        /* ===================================
+           BUTTONS
+           =================================== */
+        .btn {
+            display: inline-block;
+            padding: var(--space-sm) var(--space-lg);
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--color-gold);
+            color: var(--color-black);
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--color-gold-light);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-black);
+            border: 2px solid var(--color-black);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--color-black);
+            color: var(--color-white);
+        }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: var(--color-white);
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+        
+        .btn-large {
+            padding: var(--space-md) var(--space-xl);
+            font-size: 1.125rem;
+        }
+        
+        /* ===================================
+           IMAGES
+           =================================== */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .image-frame {
+            border-radius: var(--border-radius);
+            overflow: hidden;
+        }
+        
+        /* ===================================
+           TRUST SECTION
+           =================================== */
+        .trust-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-2xl);
+            align-items: center;
+        }
+        
+        .trust-content h2 {
+            margin-bottom: var(--space-md);
+        }
+        
+        .trust-image {
+            order: 2;
+        }
+        
+        .trust-content {
+            order: 1;
+        }
+        
+        .trust-points {
+            list-style: none;
+            margin-top: var(--space-lg);
+        }
+        
+        .trust-points li {
+            padding: var(--space-sm) 0;
+            border-bottom: 1px solid var(--color-border);
+            font-weight: 500;
+        }
+        
+        .trust-points li:last-child {
+            border-bottom: none;
+        }
+        
+        /* ===================================
+           HOW IT WORKS - CRITICAL SECTION
+           =================================== */
+        .process {
+            margin-top: var(--space-2xl);
+        }
+        
+        .step {
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: var(--space-lg);
+            padding: var(--space-lg) 0;
+            border-bottom: 1px solid var(--color-border);
+            align-items: start;
+        }
+        
+        .step:last-child {
+            border-bottom: none;
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background-color: var(--color-gold);
+            color: var(--color-black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+        
+        .step-content h3 {
+            margin-bottom: var(--space-xs);
+            color: var(--color-black);
+        }
+        
+        .step-content p {
+            margin-bottom: 0;
+        }
+        
+        /* ===================================
+           PROCESS GRID LAYOUT
+           =================================== */
+        .process-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: var(--space-2xl);
+            margin-top: var(--space-2xl);
+        }
+        
+        .about-amira {
+            padding: var(--space-lg);
+            background: var(--color-background);
+            border-left: 3px solid var(--color-gold);
+            border-radius: var(--border-radius);
+        }
+        
+        .about-amira h3 {
+            color: var(--color-gold);
+            margin-bottom: var(--space-md);
+            font-size: 1.5rem;
+        }
+        
+        .about-amira p {
+            margin-bottom: var(--space-md);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        .about-amira p:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* ===================================
+           ABOUT AMIRA - EMOTIONAL CONNECTION
+           =================================== */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: var(--space-2xl);
+            align-items: center;
+        }
+        
+        .about-content h2 {
+            color: var(--color-gold);
+            margin-bottom: var(--space-lg);
+            font-size: 2rem;
+        }
+        
+        .about-content p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-bottom: var(--space-lg);
+        }
+        
+        .about-content p:last-child {
+            margin-bottom: 0;
+        }
+        
+        /* ===================================
+           AUDIENCE SECTION - WHO IT'S FOR
+           =================================== */
+        .audience-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-xl);
+            margin-top: var(--space-2xl);
+        }
+        
+        .audience-item {
+            text-align: center;
+            padding: var(--space-xl);
+            background: var(--color-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+        }
+        
+        .audience-item:hover {
+            border-color: var(--color-gold);
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.1);
+        }
+        
+        .audience-icon {
+            font-size: 3rem;
+            margin-bottom: var(--space-md);
+            display: block;
+        }
+        
+        .audience-item h3 {
+            color: var(--color-black);
+            margin-bottom: var(--space-md);
+            font-size: 1.25rem;
+        }
+        
+        .audience-item p {
+            color: var(--color-gray);
+            line-height: 1.5;
+            margin-bottom: 0;
+        }
+        .pricing-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+        
+        .pricing-item {
+            padding: var(--space-lg);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+        }
+        
+        .pricing-item h4 {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            margin-bottom: var(--space-sm);
+            color: var(--color-black);
+        }
+        
+        /* ===================================
+           TESTIMONIALS - HIGH PRIORITY
+           =================================== */
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: var(--space-lg);
+            margin-top: var(--space-2xl);
+        }
+        
+        .testimonials-benefits-grid {
+            display: grid;
+            grid-template-columns: 3fr 2fr;
+            gap: var(--space-2xl);
+            margin-top: var(--space-2xl);
+        }
+        
+        .benefits-content {
+            padding: var(--space-xl);
+            background: var(--color-background);
+            border-left: 3px solid var(--color-gold);
+            border-radius: var(--border-radius);
+            height: fit-content;
+        }
+        
+        .benefits-content h3 {
+            color: var(--color-gold);
+            margin-bottom: var(--space-md);
+            font-size: 1.5rem;
+        }
+        
+        .benefits-list {
+            margin-top: var(--space-lg);
+        }
+        
+        .benefit-item {
+            margin-bottom: var(--space-xl);
+        }
+        
+        .benefit-item h4 {
+            color: var(--color-black);
+            margin-bottom: var(--space-sm);
+            font-size: 1.125rem;
+        }
+        
+        .benefit-item p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .benefits-cta {
+            margin-top: var(--space-xl);
+            padding-top: var(--space-lg);
+            border-top: 1px solid var(--color-border);
+        }
+        
+        .testimonial {
+            padding: var(--space-lg);
+            border-left: 3px solid var(--color-gold);
+            background-color: var(--color-background);
+        }
+        
+        .testimonial-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 8px;
+            margin-bottom: var(--space-md);
+            object-fit: cover;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-name {
+            font-weight: 600;
+            margin-bottom: var(--space-xs);
+            color: var(--color-black);
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: var(--color-light-gray);
+            font-size: 1rem;
+        }
+        
+        /* ===================================
+           WHATSAPP CTA - MAIN CONVERSION
+           =================================== */
+        .whatsapp-cta {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            text-align: center;
+            padding: var(--space-3xl) 0;
+        }
+        
+        .whatsapp-cta h2 {
+            color: var(--color-white);
+            margin-bottom: var(--space-md);
+        }
+        
+        .whatsapp-cta p {
+            color: var(--color-light-gray);
+            margin-bottom: var(--space-xl);
+            max-width: none;
+        }
+        
+        /* ===================================
+           APPLICATION FORM
+           =================================== */
+        .application-form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: var(--space-2xl);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+        }
+        
+        .form-group {
+            margin-bottom: var(--space-lg);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: var(--space-xs);
+            font-weight: 600;
+            color: var(--color-black);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--space-sm);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-gold);
+        }
+        
+        /* ===================================
+           CRYPTO PAYMENT EXPLANATION
+           =================================== */
+        .crypto-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .crypto-steps {
+            margin-top: var(--space-xl);
+        }
+        
+        .crypto-step {
+            display: flex;
+            align-items: start;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .crypto-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-gold);
+            color: var(--color-black);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        /* ===================================
+           IMAGE CAROUSEL
+           =================================== */
+        .carousel-section {
+            padding: var(--space-2xl) 0;
+            background: var(--color-black);
+        }
+        
+        .carousel-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .carousel-header {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .carousel-header h2 {
+            color: var(--color-gold);
+            font-size: 2rem;
+            margin-bottom: var(--space-md);
+        }
+        
+        .carousel-header p {
+            color: var(--color-white);
+            font-size: 1.125rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .carousel {
+            position: relative;
+            overflow: hidden;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        
+        .carousel-slide {
+            min-width: 100%;
+            position: relative;
+        }
+        
+        .carousel-slide img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .carousel-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+            color: var(--color-white);
+            padding: var(--space-xl);
+            text-align: center;
+        }
+        
+        .carousel-caption h3 {
+            color: var(--color-gold);
+            margin-bottom: var(--space-sm);
+            font-size: 1.5rem;
+        }
+        
+        .carousel-caption p {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+        
+        .carousel-controls {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 var(--space-lg);
+            pointer-events: none;
+        }
+        
+        .carousel-btn {
+            background: rgba(0, 0, 0, 0.5);
+            color: var(--color-white);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+            pointer-events: all;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .carousel-btn:hover {
+            background: var(--color-gold);
+            color: var(--color-black);
+        }
+        
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: var(--space-sm);
+            margin-top: var(--space-lg);
+        }
+        
+        .carousel-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--color-gray);
+            border: 2px solid var(--color-white);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .carousel-dot.active {
+            background: var(--color-gold);
+            border-color: var(--color-gold);
+        }
+        
+        .carousel-dot:hover {
+            background: var(--color-light-gray);
+        }
+        footer {
+            background-color: var(--color-black);
+            color: var(--color-white);
+            padding: var(--space-2xl) 0;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-xl);
+        }
+        
+        .contact-channels {
+            display: flex;
+            flex-direction: column;
+            gap: var(--space-md);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        
+        .contact-icon {
+            font-size: 1.25rem;
+            width: 24px;
+            text-align: center;
+        }
+        
+        .contact-details {
+            flex: 1;
+        }
+        
+        .contact-details strong {
+            color: var(--color-gold);
+        }
+        
+        .contact-details a {
+            color: var(--color-gold);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .contact-details a:hover {
+            color: var(--color-gold-light);
+        }
+        
+        .scam-warning {
+            background-color: rgba(220, 38, 38, 0.1);
+            border: 1px solid rgba(220, 38, 38, 0.2);
+            border-radius: var(--border-radius);
+            padding: var(--space-lg);
+            margin-top: var(--space-lg);
+        }
+        
+        .scam-warning h4 {
+            color: #d32f2f;
+            margin-bottom: var(--space-sm);
+            font-size: 1.125rem;
+            display: flex;
+            align-items: center;
+            gap: var(--space-sm);
+        }
+        
+        .scam-warning p {
+            color: #856404;
+            margin-bottom: 0;
+            line-height: 1.4;
+        }
+        
+        /* ===================================
+           RESPONSIVE
+           =================================== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 var(--space-sm);
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-grid,
+            .trust-grid,
+            .grid-2,
+            .grid-3,
+            .grid-4,
+            .process-grid,
+            .testimonials-benefits-grid,
+            .about-grid,
+            .audience-grid {
+                grid-template-columns: 1fr;
+                gap: var(--space-lg);
+            }
+            
+            .hero-image,
+            .trust-image {
+                order: 2;
+            }
+            
+            .hero-content,
+            .trust-content {
+                order: 1;
+            }
+            
+            .pricing-grid,
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                gap: var(--space-md);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===================================
+       HEADER - MINIMAL
+       =================================== -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Amira Aldahab™</div>
+                <nav>
+                    <ul>
+                        <li><a href="#process">How It Works</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================================
+       HERO - TRUST FIRST
+       =================================== -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <h1>Premium Gold with Store Locations in Cairo & Dubai</h1>
+                    <p>Trusted gold dealer with store locations in Cairo and Dubai. Secure worldwide delivery. Accept Bitcoin, USDT, and Ethereum. All transactions verified and insured.</p>
+                    
+                    <div class="hero-cta">
+                        <a href="https://wa.me/12819063800?text=Hi%20Amira,%20I'm%20interested%20in%20buying%20gold" class="btn btn-primary btn-large">Buy Gold on WhatsApp</a>
+                        <a href="#apply" class="btn btn-secondary">Join Investment Group</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="hero-image.jpg" alt="Premium gold bars and coins" class="image-frame">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+       TRUST / CREDIBILITY SECTION
+       =================================== -->
+    <section class="section">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-content">
+                    <h2>Why Choose Our Gold Service</h2>
+                    <p>We source premium gold through verified and compliant global supply channels, ensuring authenticity and competitive pricing for our global clientele.</p>
+                    
+                    <ul class="trust-points">
+                        <li>✓ Store locations in Cairo & Dubai for direct service</li>
+                        <li>✓ Sourced through verified and compliant global supply channels</li>
+                        <li>✓ Secure worldwide delivery to 150+ countries</li>
+                        <li>✓ All gold verified and certified</li>
+                        <li>✓ Insured shipping with tracking</li>
+                        <li>✓ Transparent pricing based on live market rates</li>
+                    </ul>
+                </div>
+                <div class="trust-image">
+                    <img src="1.jpg" alt="Gold sourcing and verification process" class="image-frame">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+       HOW IT WORKS - CRITICAL SECTION
+       =================================== -->
+    <section id="process" class="section">
+        <div class="container">
+            <h2 style="text-align: center;">How to Buy Gold from Us</h2>
+            
+            <div class="process-grid">
+                <div class="process-left">
+                    <div class="about-amira">
+                        <h3>ABOUT AMIRA</h3>
+                        <p>Hi, I'm Amira.</p>
+                        <p>I've spent years building my presence in the gold industry, and now I'm focused on supporting people globally by creating access to opportunities that can help them grow financially and independently.</p>
+                        <p>This program is built on structure, trust, and long-term value... not shortcuts.</p>
+                    </div>
+                </div>
+                
+                <div class="process-right">
+                    <div class="process">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Contact via WhatsApp</h3>
+                                <p>Start your order by messaging us directly on WhatsApp. We'll respond immediately with current gold availability and pricing.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Confirm Quantity & Price</h3>
+                                <p>Specify your desired gold quantity (grams, ounces, or bars). We'll provide live pricing based on current market rates and confirm total cost.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Pay Using Crypto</h3>
+                                <p>Complete payment using Bitcoin (BTC), USDT (ERC-20), or Ethereum (ETH). We'll provide the wallet address after confirmation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h3>Receive Worldwide Delivery</h3>
+                                <p>Once payment is confirmed, we'll ship your gold securely with full insurance and tracking. Delivery typically takes 5-10 business days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+       PRICING / PAYMENT INFO
+       =================================== -->
+    <section class="section">
+        <div class="container">
+            <div class="pricing-content">
+                <h2>Transparent Pricing & Payment Options</h2>
+                <p>Our pricing is based on live international gold market rates with a small premium for sourcing and secure delivery.</p>
+                
+                <div class="pricing-grid">
+                    <div class="pricing-item">
+                        <h4>Bitcoin (BTC)</h4>
+                        <p>Fast and secure payments with blockchain verification</p>
+                    </div>
+                    <div class="pricing-item">
+                        <h4>USDT (ERC-20)</h4>
+                        <p>Stablecoin payments with minimal volatility risk</p>
+                    </div>
+                    <div class="pricing-item">
+                        <h4>Ethereum (ETH)</h4>
+                        <p>Alternative crypto option with fast transactions</p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: var(--space-xl);"><strong>Minimum order:</strong> 10 grams of gold<br>
+                <strong>Payment verification:</strong> 2-3 confirmations required<br>
+                <strong>Shipping:</strong> Fully insured with tracking number</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+       TESTIMONIALS & BENEFITS - HIGH PRIORITY
+       =================================== -->
+    <section id="testimonials" class="section">
+        <div class="container">
+            <h2 style="text-align: center;">What Our Clients Say</h2>
+            
+            <div class="testimonials-benefits-grid">
+                <div class="testimonials-column">
+                    <div class="testimonials-grid">
+                        <div class="testimonial">
+                            <img src="testimonials/1.jpg" alt="Sarah Johnson" class="testimonial-image">
+                            <div class="testimonial-name">Sarah Johnson</div>
+                            <p class="testimonial-text">"The WhatsApp process was incredibly smooth. Received my gold bars in Dubai within 6 days. Perfect condition and exactly as described."</p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="testimonials/2.jpg" alt="Michael Chen" class="testimonial-image">
+                            <div class="testimonial-name">Michael Chen</div>
+                            <p class="testimonial-text">"Paid with Bitcoin and the transaction was verified quickly. Amira's team provided tracking updates throughout the delivery."</p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="testimonials/3.jpg" alt="Emily Rodriguez" class="testimonial-image">
+                            <div class="testimonial-name">Emily Rodriguez</div>
+                            <p class="testimonial-text">"Finally found a trustworthy gold dealer. The Cairo sourcing is legitimate and pricing is transparent. Will definitely order again."</p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="testimonials/4.jpg" alt="David Thompson" class="testimonial-image">
+                            <div class="testimonial-name">David Thompson</div>
+                            <p class="testimonial-text">"The crypto payment process was explained clearly. Used USDT and the delivery to my location was secure and on time."</p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="testimonials/5.jpg" alt="Lisa Anderson" class="testimonial-image">
+                            <div class="testimonial-name">Lisa Anderson</div>
+                            <p class="testimonial-text">"Excellent service from start to finish. The WhatsApp communication made everything easy and the gold quality exceeded expectations."</p>
+                        </div>
+                        <div class="testimonial">
+                            <img src="testimonials/6.jpg" alt="James Wilson" class="testimonial-image">
+                            <div class="testimonial-name">James Wilson</div>
+                            <p class="testimonial-text">"Professional and reliable. The Dubai sourcing is authentic and the worldwide delivery was handled perfectly. Highly recommend."</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="benefits-column">
+                    <div class="benefits-content">
+                        <h3>What Selected Applicants Receive</h3>
+                        <p>Join our exclusive investment group and gain access to premium opportunities and comprehensive support.</p>
+                        
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <h4>Step-by-Step Onboarding</h4>
+                                <p>Personalized onboarding process with dedicated support from day one. We guide you through every aspect of gold investing.</p>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <h4>Access to Supplier Network</h4>
+                                <p>Exclusive access to our verified global supply channels and established relationships with premium gold suppliers worldwide.</p>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <h4>Guidance & Support</h4>
+                                <p>Direct access to Amira's expertise and ongoing support for investment decisions, market analysis, and portfolio management.</p>
+                            </div>
+                            
+                            <div class="benefit-item">
+                                <h4>Logistics Explanation</h4>
+                                <p>Complete logistics support including secure storage options, insurance guidance, and worldwide delivery coordination.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="benefits-cta">
+                            <p style="text-align: center; margin-bottom: var(--space-lg);">Ready to access these exclusive benefits?</p>
+                            <a href="application.html" class="btn btn-primary" style="width: 100%;">Apply Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+       WHATSAPP CTA - MAIN CONVERSION
+       =================================== -->
+    <section class="whatsapp-cta">
+        <div class="container">
+            <h2>Start Your Gold Order Directly on WhatsApp</h2>
+            <p>Message us now for current pricing, availability, and to begin your secure gold purchase process. We respond within minutes.</p>
+            <a href="https://wa.me/12819063800?text=Hi%20Amira,%20I'm%20interested%20in%20buying%20gold" class="btn btn-whatsapp btn-large">Buy Gold on WhatsApp</a>
+        </div>
+    </section>
+
+    <!-- ===================================
+       APPLICATION SECTION - SECONDARY
+       =================================== -->
+    <section id="apply" class="section">
+        <div class="container">
+            <h2 style="text-align: center;">Join Our Investment Group</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto var(--space-xl);">Apply to join our exclusive investment group and access premium gold opportunities.</p>
+            
+            <div style="text-align: center;">
+                <a href="application.html" class="btn btn-primary btn-large">Apply to Join Investment Group</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+       CRYPTO PAYMENT EXPLANATION
+       =================================== -->
+    <section class="section">
+        <div class="container">
+            <div class="crypto-content">
+                <h2 style="text-align: center;">Secure Crypto Payment Process</h2>
+                <p style="text-align: center; max-width: none;">We prioritize security and transparency in every transaction.</p>
+                
+                <div class="crypto-steps">
+                    <div class="crypto-step">
+                        <div class="crypto-icon">✓</div>
+                        <div>
+                            <h4>Wallet Address Provided</h4>
+                            <p>After confirming your order details, we'll provide a unique wallet address for your payment.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="crypto-step">
+                        <div class="crypto-icon">✓</div>
+                        <div>
+                            <h4>Transaction Verification</h4>
+                            <p>We monitor blockchain confirmations in real-time. Your order ships once payment is verified.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="crypto-step">
+                        <div class="crypto-icon">✓</div>
+                        <div>
+                            <h4>Full Transaction Record</h4>
+                            <p>You receive complete transaction details and tracking information for your records.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+       IMAGE CAROUSEL
+       =================================== -->
+    <section class="carousel-section">
+        <div class="carousel-container">
+            <div class="carousel-header">
+                <h2>Our Global Gold Network</h2>
+                <p>Experience the luxury and security of premium gold investments from trusted sources worldwide</p>
+            </div>
+            
+            <div class="carousel" id="imageCarousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide">
+                        <img src="1.jpg" alt="Premium Gold Investment Opportunity">
+                        <div class="carousel-caption">
+                            <h3>Premium Gold Bars</h3>
+                            <p>Authentic gold sourced from verified international markets</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="2.jpg" alt="Secure Gold Storage">
+                        <div class="carousel-caption">
+                            <h3>Secure Storage</h3>
+                            <p>Professional storage solutions for your gold investments</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="3.jpg" alt="Global Gold Trading">
+                        <div class="carousel-caption">
+                            <h3>Global Trading</h3>
+                            <p>Access to international gold markets and opportunities</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="4.jpg" alt="Investment Portfolio">
+                        <div class="carousel-caption">
+                            <h3>Portfolio Growth</h3>
+                            <p>Build wealth through strategic gold investments</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="5.jpg" alt="Luxury Gold Products">
+                        <div class="carousel-caption">
+                            <h3>Luxury Gold</h3>
+                            <p>Premium gold products for discerning investors</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="6.jpg" alt="International Shipping">
+                        <div class="carousel-caption">
+                            <h3>Worldwide Delivery</h3>
+                            <p>Secure insured shipping to 150+ countries</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="7.jpg" alt="Gold Investment Strategy">
+                        <div class="carousel-caption">
+                            <h3>Expert Guidance</h3>
+                            <p>Professional investment strategies and support</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="8.jpg" alt="Market Analysis">
+                        <div class="carousel-caption">
+                            <h3>Market Insights</h3>
+                            <p>Real-time market analysis and investment opportunities</p>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="9.jpg" alt="Success Stories">
+                        <div class="carousel-caption">
+                            <h3>Success Stories</h3>
+                            <p>Join thousands of successful gold investors worldwide</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn" id="prevBtn">‹</button>
+                    <button class="carousel-btn" id="nextBtn">›</button>
+                </div>
+            </div>
+            
+            <div class="carousel-indicators" id="carouselIndicators">
+                <button class="carousel-dot active" data-slide="0"></button>
+                <button class="carousel-dot" data-slide="1"></button>
+                <button class="carousel-dot" data-slide="2"></button>
+                <button class="carousel-dot" data-slide="3"></button>
+                <button class="carousel-dot" data-slide="4"></button>
+                <button class="carousel-dot" data-slide="5"></button>
+                <button class="carousel-dot" data-slide="6"></button>
+                <button class="carousel-dot" data-slide="7"></button>
+                <button class="carousel-dot" data-slide="8"></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================================
+       FOOTER
+       =================================== -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact Information</h3>
+                    <div class="contact-channels">
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div class="contact-details">
+                                <strong>WhatsApp:</strong> <a href="https://wa.me/12819063800" style="color: var(--color-gold);">+1 (281) 906-3800</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div class="contact-details">
+                                <strong>Email:</strong> <a href="mailto:apply@amiraaldahab.online" style="color: var(--color-gold);">apply@amiraaldahab.online</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">🕐</span>
+                            <div class="contact-details">
+                                <strong>Business Hours:</strong> Monday - Friday, 9AM - 6PM EST
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="scam-warning">
+                        <h4>⚠️ Important: Official Channels Only</h4>
+                        <p>If someone contacts you outside these channels, it is NOT us. Always verify through our official WhatsApp or email before proceeding.</p>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Trust & Security</h3>
+                    <p>All gold products are sourced through verified and compliant global supply channels, fully verified and certified. We maintain complete compliance with international precious metals trading standards and ensure every transaction is secure and transparent.</p>
+                    <p style="margin-top: var(--space-sm);">&copy; 2026 Amira Aldahab™. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // ===================================
+        // CAROUSEL FUNCTIONALITY
+        // ===================================
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const totalSlides = slides.length;
+        const track = document.getElementById('carouselTrack');
+        const indicators = document.querySelectorAll('.carousel-dot');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Update indicators
+            indicators.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+        
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+        
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            updateCarousel();
+        }
+        
+        // Event listeners
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+        
+        indicators.forEach((dot, index) => {
+            dot.addEventListener('click', () => goToSlide(index));
+        });
+        
+        // Auto-play carousel
+        let autoPlayInterval = setInterval(nextSlide, 5000);
+        
+        // Pause auto-play on hover
+        const carousel = document.getElementById('imageCarousel');
+        carousel.addEventListener('mouseenter', () => clearInterval(autoPlayInterval));
+        carousel.addEventListener('mouseleave', () => {
+            autoPlayInterval = setInterval(nextSlide, 5000);
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]:not([href="#"])').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                if (href && href !== '#') {
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>

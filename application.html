@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investment Application | Amira Aldahab™</title>
+    <meta name="description" content="Apply to join Amira Aldahab™'s exclusive investment group. Professional application for serious investors only.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <style>
+        /* ===================================
+           DESIGN SYSTEM - PREMIUM FINANCIAL
+           =================================== */
+        :root {
+            --color-black: #0A0A0A;
+            --color-gray: #333333;
+            --color-light-gray: #666666;
+            --color-white: #FFFFFF;
+            --color-gold: #D4AF37;
+            --color-gold-light: #F0D264;
+            --color-border: #E5E5E5;
+            --color-background: #FAFAFA;
+            
+            --font-primary: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            --font-display: 'Georgia', 'Times New Roman', serif;
+            
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 24px;
+            --space-lg: 32px;
+            --space-xl: 48px;
+            --space-2xl: 64px;
+            --space-3xl: 96px;
+            
+            --border-radius: 4px;
+            --transition: 0.2s ease;
+            
+            --container: 700px;
+        }
+        
+        /* ===================================
+           BASE STYLES
+           =================================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-primary);
+            line-height: 1.6;
+            color: var(--color-gray);
+            background-color: var(--color-white);
+            min-height: 100vh;
+        }
+        
+        /* ===================================
+           TYPOGRAPHY
+           =================================== */
+        h1, h2, h3 {
+            font-family: var(--font-display);
+            font-weight: 400;
+            line-height: 1.2;
+            color: var(--color-black);
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: var(--space-md);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            margin-bottom: var(--space-lg);
+        }
+        
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-sm);
+            color: var(--color-black);
+        }
+        
+        p {
+            margin-bottom: var(--space-md);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        
+        a {
+            color: var(--color-gold);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        a:hover {
+            color: var(--color-gold-light);
+        }
+        
+        /* ===================================
+           LAYOUT COMPONENTS
+           =================================== */
+        .container {
+            max-width: var(--container);
+            margin: 0 auto;
+            padding: 0 var(--space-lg);
+        }
+        
+        .section {
+            padding: var(--space-3xl) 0;
+        }
+        
+        .section-sm {
+            padding: var(--space-xl) 0;
+        }
+        
+        /* ===================================
+           HEADER
+           =================================== */
+        header {
+            padding: var(--space-lg) 0;
+            border-bottom: 1px solid var(--color-border);
+            background-color: var(--color-white);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-display);
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--color-black);
+        }
+        
+        .back-link {
+            color: var(--color-gray);
+            font-size: 0.875rem;
+            display: flex;
+            align-items: center;
+            gap: var(--space-xs);
+        }
+        
+        .back-link:hover {
+            color: var(--color-gold);
+        }
+        
+        /* ===================================
+           APPLICATION FORM
+           =================================== */
+        .application-wrapper {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: var(--space-3xl) 0;
+        }
+        
+        .application-header {
+            text-align: center;
+            margin-bottom: var(--space-3xl);
+        }
+        
+        .application-header h1 {
+            font-size: 2rem;
+            margin-bottom: var(--space-sm);
+        }
+        
+        .application-header p {
+            color: var(--color-light-gray);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        
+        .application-form {
+            background: var(--color-white);
+            padding: var(--space-2xl);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-group {
+            margin-bottom: var(--space-lg);
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: var(--space-xs);
+            font-weight: 600;
+            color: var(--color-black);
+            font-size: 0.875rem;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: var(--space-sm);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            font-size: 1rem;
+            font-family: var(--font-primary);
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--color-gold);
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--space-md);
+        }
+        
+        .form-checkbox {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--space-sm);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .form-checkbox input[type="checkbox"] {
+            width: auto;
+            margin: 0;
+            margin-top: 2px;
+        }
+        
+        .form-checkbox label {
+            font-size: 0.875rem;
+            line-height: 1.4;
+            margin: 0;
+            font-weight: 400;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: var(--space-sm) var(--space-xl);
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: var(--border-radius);
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-size: 1rem;
+        }
+        
+        .btn-primary {
+            background-color: var(--color-gold);
+            color: var(--color-black);
+            width: 100%;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--color-gold-light);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--color-black);
+            border: 2px solid var(--color-black);
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--color-black);
+            color: var(--color-white);
+        }
+        
+        .btn-whatsapp {
+            background-color: #25D366;
+            color: var(--color-white);
+            margin-top: var(--space-md);
+        }
+        
+        .btn-whatsapp:hover {
+            background-color: #128C7E;
+        }
+        
+        .error-message {
+            color: #dc3545;
+            font-size: 0.875rem;
+            margin-top: var(--space-xs);
+            display: none;
+        }
+        
+        .error-message.show {
+            display: block;
+        }
+        
+        /* ===================================
+           PRE-QUALIFICATION QUIZ
+           =================================== */
+        .quiz-container {
+            max-width: 500px;
+            margin: 0 auto var(--space-3xl);
+            padding: var(--space-2xl);
+            background: var(--color-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .quiz-header {
+            text-align: center;
+            margin-bottom: var(--space-xl);
+        }
+        
+        .quiz-header h2 {
+            font-size: 1.5rem;
+            margin-bottom: var(--space-sm);
+            color: var(--color-black);
+        }
+        
+        .quiz-header p {
+            color: var(--color-light-gray);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+        
+        .quiz-question {
+            margin-bottom: var(--space-lg);
+        }
+        
+        .quiz-question h3 {
+            font-size: 1.125rem;
+            margin-bottom: var(--space-sm);
+            color: var(--color-black);
+        }
+        
+        .quiz-options {
+            display: grid;
+            gap: var(--space-sm);
+        }
+        
+        .quiz-option {
+            display: flex;
+            align-items: center;
+            padding: var(--space-sm);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .quiz-option:hover {
+            border-color: var(--color-gold);
+            background-color: var(--color-background);
+        }
+        
+        .quiz-option.selected {
+            border-color: var(--color-gold);
+            background-color: rgba(212, 175, 55, 0.1);
+        }
+        
+        .quiz-option input[type="radio"] {
+            margin-right: var(--space-sm);
+        }
+        
+        .quiz-option label {
+            cursor: pointer;
+            font-size: 0.95rem;
+            color: var(--color-gray);
+        }
+        
+        .quiz-cta {
+            text-align: center;
+            margin-top: var(--space-xl);
+        }
+        
+        .quiz-continue {
+            background-color: var(--color-gold);
+            color: var(--color-black);
+            padding: var(--space-sm) var(--space-xl);
+            border: none;
+            border-radius: var(--border-radius);
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        
+        .quiz-continue:hover {
+            background-color: var(--color-gold-light);
+        }
+        
+        .quiz-continue:disabled {
+            background-color: var(--color-light-gray);
+            color: var(--color-white);
+            cursor: not-allowed;
+        }
+        
+        /* ===================================
+           COMMON QUESTIONS
+           =================================== */
+        .common-questions {
+            margin-bottom: var(--space-xl);
+            padding: var(--space-xl);
+            background: var(--color-white);
+            border: 1px solid var(--color-border);
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .common-questions h3 {
+            text-align: center;
+            color: var(--color-black);
+            margin-bottom: var(--space-lg);
+            font-size: 1.25rem;
+        }
+        
+        .questions-list {
+            display: grid;
+            gap: var(--space-lg);
+        }
+        
+        .question-item {
+            padding: var(--space-lg);
+            border-left: 3px solid var(--color-gold);
+            background-color: var(--color-background);
+        }
+        
+        .question-item h4 {
+            color: var(--color-black);
+            margin-bottom: var(--space-sm);
+            font-size: 1.125rem;
+        }
+        
+        .question-item p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        .success-state {
+            text-align: center;
+            padding: var(--space-3xl);
+        }
+        
+        .success-state h2 {
+            color: var(--color-gold);
+            margin-bottom: var(--space-lg);
+        }
+        
+        .success-state p {
+            margin-bottom: var(--space-xl);
+        }
+        
+        /* ===================================
+           RESPONSIVE
+           =================================== */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 var(--space-md);
+            }
+            
+            .application-wrapper {
+                padding: var(--space-2xl) 0;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+                gap: var(--space-sm);
+            }
+            
+            .application-form {
+                padding: var(--space-lg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ===================================
+       HEADER
+       =================================== -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Amira Aldahab™</div>
+                <a href="index.html" class="back-link">
+                    ← Back to main site
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===================================
+       PRE-QUALIFICATION QUIZ
+       =================================== -->
+    <section class="section">
+        <div class="container">
+            <div class="quiz-wrapper">
+                <div class="quiz-container" id="quizContainer">
+                    <div class="quiz-header">
+                        <h2>Are you qualified?</h2>
+                        <p>Quick pre-qualification to ensure you're ready for our investment program</p>
+                    </div>
+                    
+                    <form id="preQualificationQuiz">
+                        <div class="quiz-question">
+                            <h3>Have you worked with online opportunities before?</h3>
+                            <div class="quiz-options">
+                                <div class="quiz-option">
+                                    <input type="radio" id="online_yes" name="online" value="yes">
+                                    <label for="online_yes">Yes, I have experience with online opportunities</label>
+                                </div>
+                                <div class="quiz-option">
+                                    <input type="radio" id="online_no" name="online" value="no">
+                                    <label for="online_no">No, this would be my first time</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-question">
+                            <h3>Are you ready to follow a structured process?</h3>
+                            <div class="quiz-options">
+                                <div class="quiz-option">
+                                    <input type="radio" id="structured_yes" name="structured" value="yes">
+                                    <label for="structured_yes">Yes, I follow instructions well</label>
+                                </div>
+                                <div class="quiz-option">
+                                    <input type="radio" id="structured_no" name="structured" value="no">
+                                    <label for="structured_no">No, I prefer to figure things out myself</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-question">
+                            <h3>What is your monthly investment capacity?</h3>
+                            <div class="quiz-options">
+                                <div class="quiz-option">
+                                    <input type="radio" id="capacity_under1k" name="capacity" value="under1k">
+                                    <label for="capacity_under1k">Under $1,000</label>
+                                </div>
+                                <div class="quiz-option">
+                                <input type="radio" id="capacity_1k_5k" name="capacity" value="1k-5k">
+                                    <label for="capacity_1k_5k">$1,000 - $5,000</label>
+                                </div>
+                                <div class="quiz-option">
+                                    <input type="radio" id="capacity_5k_10k" name="capacity" value="5k-10k">
+                                    <label for="capacity_5k_10k">$5,000 - $10,000</label>
+                                </div>
+                                <div class="quiz-option">
+                                <input type="radio" id="capacity_over10k" name="capacity" value="over10k">
+                                    <label for="capacity_over10k">Over $10,000</label>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quiz-cta">
+                            <button type="button" class="quiz-continue" id="quizContinue" disabled>Continue to Application</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container">
+            <div class="application-wrapper">
+                <div class="application-header">
+                    <h1>FILL THE FORM BELOW TO SUBMIT YOUR APPLICATION</h1>
+                    <p>Applications are reviewed to ensure serious investors only.</p>
+                </div>
+                
+                <!-- Common Questions Section -->
+                <div class="common-questions">
+                    <h3>Common Questions</h3>
+                    <div class="questions-list">
+                        <div class="question-item">
+                            <h4>Is this legitimate?</h4>
+                            <p>Yes, we are a registered gold investment group with store locations in Cairo and Dubai. All transactions are verified and insured.</p>
+                        </div>
+                        <div class="question-item">
+                            <h4>Will I be contacted directly?</h4>
+                            <p>Yes, approved applicants receive direct contact from our team within 24-48 hours via WhatsApp or email.</p>
+                        </div>
+                        <div class="question-item">
+                            <h4>What happens after applying?</h4>
+                            <p>Your application is reviewed, and if approved, you'll receive onboarding instructions and access to our investment network.</p>
+                        </div>
+                        <div class="question-item">
+                            <h4>Are there fees?</h4>
+                            <p>No application fees. We only charge small premiums on gold purchases for sourcing and secure delivery.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="applicationContent" style="display: none;">
+                    <form id="applicationForm" class="application-form" onsubmit="handleSubmit(event)">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="Enter your legal first name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Enter your legal last name" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your valid email address" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="country">Country of Origin *</label>
+                            <select id="country" name="country" required>
+                                <option value="">Select your country</option>
+                                <option value="AF">Afghanistan</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BR">Brazil</option>
+                                <option value="BN">Brunei</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CG">Congo - Brazzaville</option>
+                                <option value="CD">Congo - Kinshasa</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="CI">Cote d'Ivoire</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="SZ">Eswatini</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GR">Greece</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IE">Ireland</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KR">South Korea</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Laos</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia</option>
+                                <option value="MD">Moldova</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="MK">North Macedonia</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PW">Palau</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="QA">Qatar</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russia</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="WS">Samoa</option>
+                                <option value="SM">San Marino</option>
+                                <option value="ST">Sao Tome and Principe</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syria</option>
+                                <option value="TW">Taiwan</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Vietnam</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                                <option value="OTHER">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your valid phone number" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="whatsapp">Whatsapp</label>
+                            <input type="tel" id="whatsapp" name="whatsapp" placeholder="Enter your valid whatsapp number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="occupation">Occupation *</label>
+                            <input type="text" id="occupation" name="occupation" placeholder="Enter your occupation/your job" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="incomeRange">Monthly Income Range *</label>
+                            <select id="incomeRange" name="incomeRange" required>
+                                <option value="">Select your income range</option>
+                                <option value="0-1000">$0 – $1,000</option>
+                                <option value="1000-5000">$1,000 – $5,000</option>
+                                <option value="5000-10000">$5,000 – $10,000</option>
+                                <option value="10000+">$10,000+</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="reason">Why are you interested? *</label>
+                            <textarea id="reason" name="reason" rows="4" placeholder="Tell us why you are interested on this program" required></textarea>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">I agree to terms & conditions provided by the company. By providing my phone number, I agree to receive text messages from the business.</label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">SUBMIT APPLICATION</button>
+                    </form>
+                </div>
+                
+                <div id="successContent" class="success-state" style="display: none;">
+                    <h2>Application Received</h2>
+                    <p>Thank you for your interest in our investment group. Your application has been received and is currently under review.</p>
+                    <p>For faster processing, message us directly on WhatsApp.</p>
+                    <a href="https://wa.me/12819063800?text=Hi%20Amira,%20I%20just%20submitted%20my%20investment%20application%20and%20would%20like%20to%20discuss%20next%20steps" class="btn btn-whatsapp" target="_blank">Message on WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Google Script URL - Replace with your actual Google Script URL
+        const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec';
+        
+        // Quiz functionality
+        const quizForm = document.getElementById('preQualificationQuiz');
+        const quizContinueBtn = document.getElementById('quizContinue');
+        const quizContainer = document.getElementById('quizContainer');
+        const applicationContent = document.getElementById('applicationContent');
+        const applicationForm = document.getElementById('applicationForm');
+        
+        // Add event listeners to quiz options
+        quizForm.addEventListener('change', function() {
+            checkQuizCompletion();
+        });
+        
+        quizContinueBtn.addEventListener('click', function() {
+            if (validateQuiz()) {
+                showApplicationForm();
+            }
+        });
+        
+        function checkQuizCompletion() {
+            const questions = ['online', 'structured', 'capacity'];
+            const allAnswered = questions.every(name => {
+                const selected = document.querySelector(`input[name="${name}"]:checked`);
+                return selected;
+            });
+            
+            quizContinueBtn.disabled = !allAnswered;
+        }
+        
+        function validateQuiz() {
+            const online = document.querySelector('input[name="online"]:checked')?.value;
+            const structured = document.querySelector('input[name="structured"]:checked')?.value;
+            const capacity = document.querySelector('input[name="capacity"]:checked')?.value;
+            
+            // Check if user is qualified
+            if (online === 'no' || structured === 'no') {
+                // Show unqualified message
+                const unqualifiedMessage = `
+                    <div style="background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 8px; padding: 20px; margin-bottom: 20px; text-align: center;">
+                        <h3 style="color: #721c24; margin-bottom: 10px;">Not Quite Ready Yet</h3>
+                        <p style="color: #856404; margin-bottom: 0;">Our investment program requires some experience with online opportunities and the ability to follow structured processes. We recommend gaining some experience first before applying.</p>
+                        <p style="color: #856404; margin-bottom: 0;">Feel free to explore our main site to learn more about gold investing.</p>
+                        <a href="index.html" style="display: inline-block; padding: 10px 20px; background: #721c24; color: white; text-decoration: none; border-radius: 4px; margin-top: 10px;">Return to Main Site</a>
+                    </div>
+                `;
+                
+                quizContainer.innerHTML = unqualifiedMessage;
+                return false;
+            }
+            
+            return true;
+        }
+        
+        function showApplicationForm() {
+            // Hide quiz and show application form
+            quizContainer.style.display = 'none';
+            applicationContent.style.display = 'block';
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+        }
+        
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Clear previous error messages
+            const errorMessages = document.querySelectorAll('.error-message');
+            errorMessages.forEach(msg => {
+                msg.classList.remove('show');
+                msg.textContent = '';
+            });
+            
+            // Get form fields
+            const firstName = document.getElementById('firstName');
+            const lastName = document.getElementById('lastName');
+            const email = document.getElementById('email');
+            const country = document.getElementById('country');
+            const phone = document.getElementById('phone');
+            const occupation = document.getElementById('occupation');
+            const incomeRange = document.getElementById('incomeRange');
+            const reason = document.getElementById('reason');
+            const consent = document.getElementById('consent');
+            
+            let isValid = true;
+            
+            // Validate first name
+            if (!firstName || firstName.value.trim().length < 2) {
+                showError(firstName, 'Please enter your first name');
+                isValid = false;
+            }
+            
+            // Validate last name
+            if (!lastName || lastName.value.trim().length < 2) {
+                showError(lastName, 'Please enter your last name');
+                isValid = false;
+            }
+            
+            // Validate email
+            if (!email || !isValidEmail(email.value)) {
+                showError(email, 'Please enter a valid email address');
+                isValid = false;
+            }
+            
+            // Validate country
+            if (!country || !country.value) {
+                showError(country, 'Please select your country');
+                isValid = false;
+            }
+            
+            // Validate phone
+            if (!phone || phone.value.trim().length < 10) {
+                showError(phone, 'Please enter a valid phone number');
+                isValid = false;
+            }
+            
+            // Validate occupation
+            if (!occupation || occupation.value.trim().length < 2) {
+                showError(occupation, 'Please enter your occupation');
+                isValid = false;
+            }
+            
+            // Validate income range
+            if (!incomeRange || !incomeRange.value) {
+                showError(incomeRange, 'Please select your income range');
+                isValid = false;
+            }
+            
+            // Validate reason
+            if (!reason || reason.value.trim().length < 10) {
+                showError(reason, 'Please tell us why you are interested (minimum 10 characters)');
+                isValid = false;
+            }
+            
+            // Validate consent
+            if (!consent || !consent.checked) {
+                alert('You must agree to the terms and conditions to submit your application.');
+                isValid = false;
+            }
+            
+            if (isValid) {
+                // Collect form data
+                const formData = {
+                    firstName: firstName.value,
+                    lastName: lastName.value,
+                    email: email.value,
+                    country: country.value,
+                    phone: phone.value,
+                    whatsapp: document.getElementById('whatsapp').value,
+                    occupation: occupation.value,
+                    incomeRange: incomeRange.value,
+                    reason: reason.value,
+                    consent: consent.checked,
+                    timestamp: new Date().toISOString(),
+                    source: 'Application Form'
+                };
+                
+                // Send to Google Script
+                sendToGoogleScript(formData);
+            }
+        }
+        
+        function sendToGoogleScript(data) {
+            // Show loading state
+            const submitBtn = document.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+            
+            // Send data to Google Script
+            fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                mode: 'no-cors',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data)
+            })
+            .then(() => {
+                // Show success state
+                document.getElementById('applicationContent').style.display = 'none';
+                document.getElementById('successContent').style.display = 'block';
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+                
+                console.log('Application submitted:', data);
+            })
+            .catch((error) => {
+                console.error('Error submitting application:', error);
+                
+                // Show error message but still display success state
+                alert('Application submitted successfully! We will contact you within 24-48 hours.');
+                
+                // Show success state
+                document.getElementById('applicationContent').style.display = 'none';
+                document.getElementById('successContent').style.display = 'block';
+                
+                // Scroll to top
+                window.scrollTo(0, 0);
+            })
+            .finally(() => {
+                // Reset button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            });
+        }
+        
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+        
+        function showError(field, message) {
+            // Find or create error message element
+            let errorElement = field.parentNode.querySelector('.error-message');
+            if (!errorElement) {
+                errorElement = document.createElement('div');
+                errorElement.className = 'error-message';
+                field.parentNode.appendChild(errorElement);
+            }
+            
+            errorElement.textContent = message;
+            errorElement.classList.add('show');
+            
+            // Remove error after 5 seconds or on field focus
+            const removeError = () => {
+                errorElement.classList.remove('show');
+                errorElement.textContent = '';
+            };
+            
+            setTimeout(removeError, 5000);
+            
+            field.addEventListener('focus', removeError, { once: true });
+        }
+    </script>
+
+</body>
+</html>

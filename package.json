@@ -1,0 +1,23 @@
+{
+  "name": "amira-aldahab-gold-investment",
+  "version": "1.0.0",
+  "description": "Professional gold investment platform by Amira Aldahab",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "gold",
+    "investment",
+    "luxury",
+    "finance",
+    "amira-aldahab"
+  ],
+  "author": "Amira Aldahab",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}
