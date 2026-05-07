@@ -1,7 +1,7 @@
 /**
  * ===================================
  * PREMIUM LUXURY LANDING PAGE
- * Amira Aldahab - Gold Investment Program
+ * Amira Alhadab - Gold Investment Program
  * Interactive JavaScript Functionality
  * ===================================
  */
@@ -545,5 +545,5 @@ document.addEventListener('DOMContentLoaded', function() {
         modalClose.setAttribute('aria-label', 'Close modal');
     }
     
-    console.log('🚀 Premium Amira Aldahab landing page loaded successfully!');
+    console.log('🚀 Premium Amira Alhadab landing page loaded successfully!');
 });

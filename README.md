@@ -1,4 +1,4 @@
-# Amira Aldahab Gold Investment Platform
+# Amira Alhadab Gold Investment Platform
 
 A professional, high-conversion gold investment platform with application funnel, testimonials, and secure contact channels.
 
@@ -113,4 +113,4 @@ MIT License - Feel free to use for your projects.
 
 ---
 
-*Built with ❤️ by Amira Aldahab*
+*Built with ❤️ by Amira Alhadab*

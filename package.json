@@ -1,7 +1,7 @@
 {
   "name": "amira-aldahab-gold-investment",
   "version": "1.0.0",
-  "description": "Professional gold investment platform by Amira Aldahab",
+  "description": "Professional gold investment platform by Amira Alhadab",
   "main": "index.html",
   "scripts": {
     "start": "python -m http.server 8000",
@@ -16,7 +16,7 @@
     "finance",
     "amira-aldahab"
   ],
-  "author": "Amira Aldahab",
+  "author": "Amira Alhadab",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {}
