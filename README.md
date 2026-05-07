@@ -104,7 +104,7 @@ Update WhatsApp number in:
 ## 📞 Contact
 
 - **WhatsApp**: +1 (281) 906-3800
-- **Email**: apply@amiraaldahab.online
+- **Email**: apply@amiraalhadab.online
 - **Business Hours**: Monday - Friday, 9AM - 6PM EST
 
 ## 📄 License
